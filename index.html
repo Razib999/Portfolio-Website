@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Portfolio Website </title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+
+
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="Image/Profile Image 1.png" alt="Profile" class="avatar">
+        <h1 class="brand">Md. Razib Hossain</h1>
+        <p class="role">Oracle Apex Developer</p>
+      </div>
+
+      <nav class="side-nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </aside>
+
+
+    <main class="main">
+
+      <header class="main-header">
+        <button id="menu-btn" class="hamburger" aria-label="Open menu">☰</button>
+      </header>
+
+
+      <section id="home" class="hero section">
+        <div class="hero-inner container">
+          <div class="hero-text">
+            <h2 class="eyebrow">Hi — I’m</h2>
+            <h1 class="hero-title"><span class="accent">Md. Razib Hossain</span></h1>
+            <h3 class="hero-sub"> I build modern, data-driven web applications using  <span id="typing"></span><span class="cursor">|</span></h3>
+            <p class="lead">I specialize in developing modern, data-driven web applications using Oracle APEX (Application Express).
+With Oracle APEX, I create secure, scalable, and responsive enterprise applications.</p>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+            </div>
+          </div>
+
+          <div class="hero-image" aria-hidden="true">
+            <img src="Image/Profile Image 2.png" alt="Hero image">
+          </div>
+        </div>
+      </section>
+
+
+      <section id="about" class="about section">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <p>I’m Passionate about building powerful web apps with Oracle APEX, I turn database ideas into interactive dashboards and business solutions.
+From design to deployment, I focus on performance, usability, and clean user experiences backed by robust Oracle technologies.</p>
+              <ul class="about-list">
+                <li><strong>Location:</strong> Dhaka, Bangladesh</li>
+                <li><strong>Email:</strong> razibhossain975@gmail.com</li>
+              </ul>
+              <div class="about-actions">
+                <a class="btn" href="#">Download CV</a>
+                <a class="btn btn-outline" href="#projects">My Work</a>
+              </div>
+            </div>
+            <div class="about-stats reveal">
+              <div class="stat">
+                <div class="stat-num">3+</div>
+                <div class="stat-label">Years experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">50+</div>
+                <div class="stat-label">Projects completed</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">20</div>
+                <div class="stat-label">Clients</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="skills" class="skills section">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <h4>Front-end</h4>
+              <p>HTML • CSS • JavaScript </p>
+            </div>
+            <div class="skill-card reveal">
+              <h4>Back_end</h4>
+              <p>Sql • Pl/Sql</p>
+            </div>
+            <div class="skill-card reveal">
+              <h4>Tools</h4>
+              <p>Forms • Reports • Apex</p>
+            </div>
+            <div class="skill-card reveal">
+              <h4>Performance</h4>
+              <p>Accessibility • Efficient Page Design • Responsive</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="projects" class="projects section">
+        <div class="container">
+          <h2 class="section-title">Selected Projects</h2>
+          <div class="projects-grid">
+            <article class="project reveal">
+              <img src="Image/PROJECT.png" alt="">
+              <div class="project-body">
+                <h3>Integrated Farm Management</h3>
+                <p>Integrated Farm Management (IFM) is a site-specific farm business approach that uses the best of modern technology and traditional methods.</p>
+                <a href="#" class="project-link">View case study →</a>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <img src="Image/PROJECT 2.png" alt="">
+              <div class="project-body">
+                <h3>Animal Farm Management</h3>
+                <p>Integrated Farm Management (IFM) is a site-specific farm business approach that uses the best of modern technology and traditional methods.</p>
+                <a href="#" class="project-link">View case study →</a>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <img src="Image/PROJECT 3.png" alt="">
+              <div class="project-body">
+                <h3>Robotics Farm Management</h3>
+                <p>Integrated Farm Management (IFM) is a site-specific farm business approach that uses the best of modern technology and traditional methods.</p>
+                <a href="#" class="project-link">View case study →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="contact" class="contact section">
+        <div class="container">
+          <h2 class="section-title">Get in touch</h2>
+          <div class="contact-grid">
+            <form class="contact-form reveal" id="contact-form">
+              <input type="text" name="name" placeholder="Your name" required/>
+              <input type="email" name="email" placeholder="Your email" required/>
+              <textarea name="message" rows="6" placeholder="Message" required></textarea>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+            <div class="contact-info reveal">
+              <h3>Prefer email?</h3>
+              <p><a class="el" chref="mailto:you@domain.com">razibhossain975@gmail.com</a></p>
+              <h3>Based in</h3>
+              <p>Dhaka, Bangladesh.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p>© <span id="year"></span> Razib Hossain — Designed & built by Razib</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
